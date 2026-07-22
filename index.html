@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Warung Family Ayam Krispy & Sambel Uleg</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar Navigasi Utama -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-fire me-2"></i>Warung Family</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-bold">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Lokasi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Hero + Tombol Pesan Sekarang -->
+    <div class="bg-dark text-white text-center py-5" style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=1000&auto=format&fit=crop') center/cover; padding-bottom: 90px !important;">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold mb-2">Warung Family</h1>
+            <p class="lead mb-4">Ayam Krispy & Sambel Uleg Asli - Gurih, Renyah, Pedas Mantap!</p>
+            
+            <!-- Tombol Pesan Sekarang yang ngarah ke bawah -->
+            <a href="#pesan-sekarang" class="btn btn-warning btn-lg fw-bold px-4 py-3 rounded-pill shadow-lg text-dark">
+                <i class="bi bi-cart-fill me-2"></i>Pesan Sekarang
+            </a>
+        </div>
+    </div>
+
+    <!-- 3 Tombol Navigasi Kartu Modern (Style UI Melayang) -->
+    <section class="py-4 bg-light" style="margin-top: -60px; position: relative; z-index: 10;">
+        <div class="container">
+            <div class="row g-4 text-center">
+                
+                <!-- Card 1: Profil -->
+                <div class="col-md-4">
+                    <a href="profil.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 shadow-lg p-4 hover-card" style="border-radius: 24px !important;">
+                            <div class="mb-3">
+                                <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?q=80&w=200&auto=format&fit=crop" 
+                                     alt="Profil Warung" 
+                                     class="rounded-circle shadow-sm object-fit-cover" 
+                                     style="width: 90px; height: 90px;">
+                            </div>
+                            <h4 class="fw-bold text-danger mb-2">Profil Warung</h4>
+                            <p class="text-muted small mb-0">Mengenal lebih dekat Warung Family, keunggulan bahan, dan jaminan kualitas rasa.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 2: Menu Utama -->
+                <div class="col-md-4">
+                    <a href="menu.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 shadow-lg p-4 hover-card" style="border-radius: 24px !important;">
+                            <div class="mb-3">
+                                <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=200&auto=format&fit=crop" 
+                                     alt="Menu Utama" 
+                                     class="rounded-circle shadow-sm object-fit-cover" 
+                                     style="width: 90px; height: 90px;">
+                            </div>
+                            <h4 class="fw-bold text-danger mb-2">Menu Utama</h4>
+                            <p class="text-muted small mb-0">Pilihan varian Ayam Krispy, Ayam Geprek Sambel Uleg, dan minuman segar.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 3: Kontak & Lokasi -->
+                <div class="col-md-4">
+                    <a href="kontak.html" class="text-decoration-none">
+                        <div class="card h-100 border-0 shadow-lg p-4 hover-card" style="border-radius: 24px !important;">
+                            <div class="mb-3">
+                                <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?q=80&w=200&auto=format&fit=crop" 
+                                     alt="Kontak & Lokasi" 
+                                     class="rounded-circle shadow-sm object-fit-cover" 
+                                     style="width: 90px; height: 90px;">
+                            </div>
+                            <h4 class="fw-bold text-danger mb-2">Kontak & Lokasi</h4>
+                            <p class="text-muted small mb-0">Petunjuk Google Maps, alamat lengkap di Jimbaran, dan kontak WhatsApp order.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Warung Family -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-4 shadow" alt="Tentang Warung Family">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-danger mb-3">Tentang Warung Family</h2>
+                    <p class="text-muted leading-relaxed">
+                        Selamat datang di <strong>Warung Family Ayam Krispy & Sambel Uleg</strong>! Kami menyajikan olahan ayam krispy renyah berbumbu istimewa dan ayam geprek dengan sambel bawang uleg segar. Dibuat langsung mendadak saat dipesan untuk menjaga kepuasan rasa Anda.
+                    </p>
+                    <p class="text-muted">
+                        Pilihan tepat untuk makan siang praktis, kenyang, hemat, dan pas di kantong mahasiswa maupun keluarga!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Scroll: Formulir Pemesanan -->
+    <section id="pesan-sekarang" class="py-5 bg-white border-top">
+        <div class="container" style="max-width: 700px;">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-danger"><i class="bi bi-cart-check me-2"></i>Formulir Pemesanan</h2>
+                <p class="text-muted">Isi formulir di bawah untuk melakukan pemesanan langsung secara online.</p>
+            </div>
+            <div class="card p-4 shadow-sm border-0 bg-light rounded-4">
+                <form onsubmit="event.preventDefault(); alert('Pesanan Anda berhasil dikirim!');">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nama Lengkap</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama kamu" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nomor WhatsApp</label>
+                        <input type="tel" class="form-control" placeholder="Contoh: 08123456789" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Detail Pesanan & Level Pedas</label>
+                        <textarea class="form-control" rows="3" placeholder="Contoh: 1x Paket Ayam Geprek Level 3, 1x Es Nutrisari" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100 fw-bold py-2"><i class="bi bi-send me-2"></i>Kirim Pesanan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
